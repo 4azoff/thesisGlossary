@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Terms</title>
+    <link rel="stylesheet" href="static/terms.css">
+  </head>
+  <body>
+    <form action="/mindMap">
+      <input type="submit" value="Go to MindMap" />
+    </form>
+    <div class="container">
+      <h1>Terms</h1>
+      <ul>
+        {{range .}}
+          <li><strong>{{.Name}}:</strong> {{.Description}}</li>
+        {{end}}
+      </ul>
+    </div>
+  </body>
+</html>
