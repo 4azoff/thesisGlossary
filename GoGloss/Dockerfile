@@ -11,6 +11,6 @@ COPY /cmd/terms.html /app/
 COPY /cmd/static/ /app/static/
 
 RUN go mod download
-RUN go build -o ./terms ./cmd
+RUN go build -o ./termsGo ./cmd
 
-ENTRYPOINT [ "./terms" ]
+ENTRYPOINT [ "./termsGo" ]

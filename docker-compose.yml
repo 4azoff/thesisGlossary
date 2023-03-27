@@ -1,0 +1,25 @@
+version: "3.9"
+
+networks:
+  network:
+    driver: bridge
+
+services:
+  terms_rust:
+    build: ./RustGloss
+    ports:
+      - "8088:8088"
+    networks:
+      - network
+    user: root
+    restart: on-failure
+
+  terms_go:
+    build: ./GoGloss
+    ports:
+      - "8080:8080"
+    networks:
+      - network
+    user: root
+    restart: on-failure
+

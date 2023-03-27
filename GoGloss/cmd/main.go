@@ -34,7 +34,7 @@ func renderMindMap(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	http.HandleFunc("/terms", renderTerms)
+	http.HandleFunc("/termsGo", renderTerms)
 	http.HandleFunc("/mindMap", renderMindMap)
 
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))

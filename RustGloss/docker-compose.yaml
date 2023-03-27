@@ -4,12 +4,12 @@ networks:
     driver: bridge
 
 services:
-  terms:
+  terms_rust:
     build: .
 
-    container_name: terms
+    container_name: terms_rust
     ports:
-      - "8080:8080"
+      - "8088:8088"
     networks:
       - network
     user: root
