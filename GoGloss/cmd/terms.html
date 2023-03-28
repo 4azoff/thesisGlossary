@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Terms</title>
+    <title>Термины ВКР</title>
     <link rel="stylesheet" href="static/terms.css">
   </head>
   <body>
     <form action="/mindMap">
-      <input type="submit" value="Go to MindMap" />
+      <input type="submit" value="Перейти к карте" />
     </form>
     <div class="container">
-      <h1>Terms</h1>
+      <h1>Термины ВКР</h1>
       <ul>
         {{range .}}
           <li><strong>{{.Name}}:</strong> {{.Description}}</li>

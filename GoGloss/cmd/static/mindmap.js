@@ -95,16 +95,14 @@ function drawLines(data) {
   })
 }
 const data = [
-  { id: null , text: "<b>Test<br>Mind Map</b>" },
-  { id: 1 , parentId: null, text: "Idea - 1" },
-  { id: 2 , parentId: null, text: "Dr. Helmut Zimmermann" },
-  { id: 3 , parentId: null, text: "Idea - 3" },
-  { id: 4 , parentId: 1, text: "order Cake and <b>Coffee</b>" },
-  { id: 5 , parentId: 1, text: "Idea - 1 - 2 " },
-  { id: 6 , parentId: 3, text: "Idea - 3 - 1 " },
-  { id: 7 , parentId: 3, text: "Idea- 3 - 2" },
-  { id: 10 , parentId: 2, text: "Idea - 2 - 1" },
-  { id: 12 , parentId: 2, text: "Idea - 2 - 2" },
+  { id: null , text: "<b>ЯП</b>" },
+  { id: 2 , parentId: null, text: "Rust" },
+  { id: 3 , parentId: null, text: "Go" },
+  { id: 4 , parentId: null, text: "Backend" },
+  { id: 5 , parentId: 4, text: "Приложение" },
+  { id: 6 , parentId: 5, text: "Клиент - сервер" },
+  { id: 7 , parentId: 6, text: "Клиент" },
+  { id: 10 , parentId: 6, text: "Сервер" },
 ];
 createMap(data)
 resizeObserver.observe($('#container').n)
